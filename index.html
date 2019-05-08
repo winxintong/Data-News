@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data News</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+    <script src="echarts.min.js"></script>
+	<style>
+	.head {  
+		top: 0px;
+		left: 0px;
+		height: 97%;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px;
+		border-width: 0px;
+		position: relative;
+		text-align: center;
+	}
+	#video1 {
+	    top: 0px;
+	    margin: 0 auto;
+		padding: 0px;
+		height: 105%;
+		width: 100%;
+		right: 0px;
+	}
+	.head1 {
+	    color: #F8F8F8;
+		letter-spacing: 25%;
+		font-size: 500%;
+		top: 30%;
+		width: 100%;
+		font-family: FangSong_GB2312;
+	    text-shadow:2px 2px 6px #000;
+		position: absolute;
+		margin: auto;
+		align: center;
+		font-weight: bold;
+	}
+	.daoyan {
+	    color: #F8F8F8;
+		letter-spacing: 6px;
+		font-size: 19px;
+		top: 165%;
+		left: 25%;
+		font-family: FangSong_GB2312;
+		text-shadow:2px 2px 6px #000;
+		position: absolute;
+		line-height: 150%;
+
+	}
+	.guidewords {
+	height: 100%;
+	width: 100%;
+	top: 150%;
+	margain: 0 auto;
+	letter-space: 2px;
+	font-family: "STXihei";
+	border-width: 1px;
+	line-height: 25px;
+	font-size: 20px;
+	background-image: url("img/bk1.jpg");
+	color: white;
+	}	
+	
+	
+	
+	</style>
+    
+</head>
+
+<body>
+	
+	<header>
+		<video autoplay loop width="100%" height="100%">
+			<source src="img/banner.mp4" type="video/mp4">
+		</video>
+		<h1 class="head1" style="align: center">学前教育的治愈之路</p>
+		<p class="daoyan" style="text-align">在人口庞大的中国，想解决和教育有关的问题，不能奢求一朝一夕。<br>从2010年开始，针对学前教育痛点的治愈就一直在进行。 
+		<br>9年之后，学前教育怎么样了?我们对它还有什么期待吗?<br>我们希望通过数据带你了解学前教育的治愈之路。</p>
+    </header>
+
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<h3 class="text-center">
+						
+					</h3>
+					
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div  class= "col-md-12"  >
+					<img src="img/bk1.jpg" class = "img-responsive"  width = "100%" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row align-items-center">
+				<div  class= "col-md-12">
+					<div class="row">
+						<div class="span12">
+						<p class="text-center">
+								<br><br>
+							</p>
+							<h3 class="text-center">
+								2010：治愈的第一步是自揭伤疤<br><br>
+							</h3>
+							<p class="text-center">
+								学前教育的治愈之路开始于九年前的深秋。
+							2010年11月，《国务院关于当前发展学前教育的若干意见》发布，这份文件也被称为“国十条”。其中提到的诸多问题，广泛存在于中国的学前教育中。
+							“学前教育存在教育资源短缺、投入不足，师资队伍不健全，体制机制不完善，城乡区域发展不平衡等问题，一些地方“入园难”问题突出。”
+							每一条总结的背后，都折射着中国学前教育的困境。这些困境并非新病，而是顽疾。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="row align-items-center"">
+				<div  class= "col-md-12">
+				<div id="1" style="width: 1100px;height:600px;"></div>
+					    <script type="text/javascript">
+						var dom = document.getElementById("1");
+						var myChart = echarts.init(dom);
+						var app = {};
+						option = null;
+						option = {
+							title : [{
+								text: '城乡幼儿园生师比',
+								subtext: '数据来源：教育部发展规划司教育统计数据',    
+							},
+							{
+								subtext: '教育部《幼儿园教职工配备标准》：每班配2名专任教师，根据班级规模，幼儿数与专任教师数比值为10:1~17.5:1。',
+							  
+								   y: '93%'
+							   },
+								{
+								subtext: '生师比=在园幼儿数/专任教师数',
+							  
+								   y: '89%'
+							   },],
+							tooltip : {
+								trigger: 'axis'
+							},
+							legend: {
+								data:[ '城市', '县镇', '农村']
+							},
+							toolbox: {
+								show : true,
+								feature : {
+									dataView : {show: true, readOnly: false},
+									magicType : {show: true, type: ['line', 'bar']},
+									restore : {show: true},
+									saveAsImage : {show: true}
+								}
+							},
+							calculable : true,
+							xAxis : [
+								{
+									type : 'category',
+									data : ['2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010']
+								}
+							],
+							yAxis : [
+								{
+									type : 'value'
+								}
+							],
+							series : [
+								{
+									name:'城市',
+									type:'bar',
+									data:[18.86 
+						,18.35 
+						,17.67 
+						,16.66 
+						,16.56 
+						,16.35 
+						,16.28 
+						,16.26 ],
+								   
+								   
+									 markLine : {
+										data : [
+											{ name : '最低标准', yAxis: 17.5}
+										]
+									}
+								},
+								{
+									name:'县镇',
+									type:'bar',
+									data:[26.04 
+						,26.20 
+						,25.77 
+						,25.71 
+						,25.91 
+						,25.41 
+						,25.94 
+						,24.91 ],
+									
+									
+								},
+								
+								 {
+									name:'农村',
+									type:'bar',
+									data:[73.66 
+						,67.04 
+						,60.00 
+						,55.17 
+						,54.36 
+						,51.17 
+						,49.01 
+						,44.01 ],
+									markPoint : {
+										data : [
+											{name : '年最高', value : 73.7, xAxis: 0, yAxis: 74},
+											  {name : '年最高', value : 44.0, xAxis: 7, yAxis: 44.0},
+											   
+										  
+										]
+									},
+								  
+								}
+							]
+						};
+						;
+						if (option && typeof option === "object") {
+							myChart.setOption(option, true);
+						}
+						</script>
+				</div>
+				<p><br>以师生比为例。在2003年，全国农村幼儿园的师生比达到了73.7;1，相当于1位专任老师要管理将近74个幼儿，2010年，这一数字下降到了44：1，却依然远高于教育部规定师生比的最大限度——17.5：1。
+				如果我们考虑城乡师生比差距，情况可能更糟。虽然师生比是在不断缩小的，但是到2010年，一个农村的教师管理的学生数量，仍是同时期城市教师管理数量的3倍。在鲜明的城乡差距下，城市的情况似乎比农村好太多，但即便如此，城市的师生比也刚刚达到教育部划定的17.5的及格线。
+				而实际上，师生比能达到这个水平已经是在硬撑。若与当年的毛入园率同时展现在人们面前，一个发展中国家薄弱的学前教育状况便显露得更加直白。2010年，全国幼儿园学前教育的毛入园率仅仅达到56.6%，也就是说，近一半适龄幼儿没有接受到学前教育，这或许与个体家庭的教育理念有关，但在如此高的师生比压力下，实现毛入园率的增长的确是一项极难完成的挑战。
+				对于庞大的中国而言，解决任何与人口有关的问题都格外棘手，学前教育也不例外。</p>
+			</div>
+		</div>
+	</section>
+	<section>
+	    <div class="container">
+			<div class="row align-items-center">
+				<div  class= "col-md-12">
+					<div class="row">
+						<div class="span12">
+						<p class="text-center">
+								<br><br>
+							</p>
+							<h3 class="text-center">
+								2011-2017：两个“三年”之后，学前教育怎么样了？<br><br>
+							</h3>
+							<p class="text-center">
+								2011-2017年，两期学前教育三年行动计划依次实行，学前教育迎来了快速发展期。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="row align-items-center"">
+				<div  class= "col-md-12">
+					<div id="2" style="width: 1100px;height:600px;"></div>
+						<script type="text/javascript">
+							var dom = document.getElementById("2");
+							var myChart = echarts.init(dom);
+							var app = {};
+							option = null;
+							option = {
+								 title: [{
+									text: '学前教育经费来源', 
+									subtext: '                                      数据来源：历年《中国教育经费统计年鉴》   注：其它教育经费含民办学校中举办者投入、捐赠收入、除学费外的事业收入等'
+								},
+								
+							   {
+									subtext: '',
+								   
+									   y: '15%'
+								 },
+								 
+								 ],
+								tooltip : {
+									trigger: 'axis',
+									axisPointer: {
+										type: 'cross',
+										label: {
+											backgroundColor: '#6a7985'
+										}
+									}
+								},
+								legend: {
+									data:['学费','国家财政性教育经费','其它教育经费']
+								},
+								toolbox: {
+									feature: {
+										saveAsImage: {}
+									}
+								},
+								grid: {
+									left: '3%',
+									right: '4%',
+									bottom: '3%',
+									containLabel: true
+								},
+								xAxis : [
+									{
+										type : 'category',
+										boundaryGap : false,
+										data : ['2012',
+							'2013',
+							'2014',
+							'2015',
+							'2016',
+							'2017']
+									}
+								],
+								yAxis : [
+									{
+										type : 'value',
+										name:'经费/千万元'
+									}
+								],
+								series : [
+									{
+										name:'学费',
+										type:'line',
+										stack: '总量',
+										areaStyle: {},
+										data:[4927.26 ,
+							6281.60 ,
+							7556.60 ,
+							9820.86 ,
+							11564.81 ,
+							13402.11 ]
+									},
+									{
+										name:'国家财政性教育经费',
+										type:'line',
+										stack: '总量',
+										areaStyle: {},
+										data:[4156.99, 
+							7476.50 ,
+							8623.72, 
+							9251.37, 
+							11243.18, 
+							13260.72 ]
+									},
+								  
+									{
+										name:'其它教育经费',
+										type:'line',
+										stack: '总量',
+										areaStyle: {normal: {}},
+										data:[865.04 ,
+							880.58 ,
+							1031.22 ,
+							1003.68 ,
+							1053.75 ,
+							1212.56 ]
+									},
+									
+								]
+							};
+							;
+							if (option && typeof option === "object") {
+								myChart.setOption(option, true);
+}
+						</script>
+				</div>
+				<p><br>教育经费投入是学前教育发展的基础，作为教育经费的两大来源，学费和财政补贴可分别视为国民和国家对学前教育的投入。从2012到2017年，学前教育的经费一直在增长，而且学费和财政补贴的比例往往能达到一比一，可以说在学前教育领域，国家和国民的投入是总体持平的。
+				经费源源不断注入，只是解决问题的第一步。
+				在对抗入园难这一顽疾上，壮大民办园的力量是关键。在“国十条”明确“积极扶持民办幼儿园特别是面向大众、收费较低的普惠性民办幼儿园发展”的原则后，民办园的办学热情被激发，许多社会资本进入学前教育领域，民办园的数量和入园人数逐年增长。从普通的平价幼儿园到高端连锁幼儿园，民办园的迅猛发展让家长有了更多的选择。“民办若有好口碑，未尝不能考虑，哪怕贵一点”，张丽就考察过小区附近的一所高端民办幼儿园，一个月要花费近5000块钱，硬件设施条件好，宣称所谓的“蒙氏教育理念”。<br></p>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row align-items-center"">
+				<div  class= "col-md-12">
+					<div id="3" style="width: 1100px;height:600px;"></div>
+						<script type="text/javascript">
+							var dom = document.getElementById("3");
+							var myChart = echarts.init(dom);
+							var app = {};
+							option = null;
+							app.title = '折柱混合';
+							option = {
+							   title :[ {
+									text: '园所数、在园幼儿数',
+									
+							   
+								},
+								{
+									subtext: '数据来源：教育部发展规划司教育统计数据',
+								  
+									   y: '93%'
+								   },],
+								tooltip: {
+									trigger: 'axis',
+									axisPointer: {
+										type: 'cross',
+										crossStyle: {
+											color: '#999'
+										}
+									}
+								},
+								toolbox: {
+									feature: {
+										dataView: {show: true, readOnly: false},
+										magicType: {show: true, type: ['line', 'bar']},
+										restore: {show: true},
+										saveAsImage: {show: true}
+									}
+								},
+								legend: {
+									data:['民办园','公办园','民办园在园幼儿','公办园在园幼儿']
+								},
+								xAxis: [
+									{
+										
+										type: 'category',
+										data: ['2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017'],
+										axisPointer: {
+											type: 'shadow',
+											
+										}
+									}
+								],
+								yAxis: [
+									{
+										type: 'value',
+										name: '园所数/万所',
+										min: 0,
+										max: 18,
+										interval: 2,
+										axisLabel: {
+											formatter: '{value}'
+										}
+									},
+									{
+										type: 'value',
+										name: '在园幼儿数/万人',
+										min: 0,
+										max: 3000,
+										interval: 500,
+										axisLabel: {
+											formatter: '{value}'
+										}
+									}
+								],
+								series: [
+									{
+										name:'公办园',
+										type:'bar',
+										data:[6.08,
+							5.57,
+							5.56,
+							5.51,
+							5.15,
+							5.06,
+							4.89,
+							4.81,
+							5.14,
+							5.67,
+							6.51,
+							7.06,
+							7.73,
+							8.56,
+							9.46,]
+									},
+									{
+										name:'民办园',
+										type:'bar',
+										data:[5.55,
+							6.22,
+							6.88,
+							7.54,
+							7.76,
+							8.31,
+							8.93,
+							10.23,
+							11.54,
+							12.46,
+							13.35,
+							13.93,
+							14.64,
+							15.42,
+							16.04,
+							]
+									},
+									{
+										name:'民办园在园幼儿',
+										type:'line',
+										yAxisIndex: 1,
+										data:[480.23,
+							584.11 ,
+							668.09 ,
+							775.69 ,
+							868.75 ,
+							982.03 ,
+							1134.17 ,
+							1399.47 ,
+							1694.21 ,
+							1852.74 ,
+							1990.25 ,
+							2125.38 ,
+							2302.44 ,
+							2437.66 ,
+							2572.34 
+
+							]
+									},
+									 {
+										name:'公办园在园幼儿',
+										type:'line',
+										yAxisIndex: 1,
+										data:[1523.68 ,
+							1505.29 ,
+							1510.94 ,
+							1488.16 ,
+							1480.08 ,
+							1492.93 ,
+							1523.64 ,
+							1577.20 ,
+							1730.24 ,
+							1833.02 ,
+							1904.44 ,
+							1925.33 ,
+							1962.39 ,
+							1976.20 ,
+							2027.80 
+							]
+									},
+									
+								]
+							};
+							;
+							if (option && typeof option === "object") {
+								myChart.setOption(option, true);
+							}
+						</script>
+				</div>
+				<p><br>在2011年之前，数量更少的公办园吸纳了更多的幼儿。随着民办园数量的增加，越来越多的幼儿就读于民办园，在园幼儿数逐渐趋近公办园。
+				2011年后，民办园在园幼儿数超过公办园，二者的数量差距继续拉大。若将2017年与2011年相比会发现，在两个“三年”实施后，民办园入园人数将近增
+				加了1000万，而公办园仅仅增加了300万。单看2017年，民办园就比公办园幼儿数量多了500万。</p>
+			</div>	
+		</div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 order-2">
+				<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+				<div id="4" style="width: 500px;height:400px;"></div>
+					<script type="text/javascript">
+						var dom = document.getElementById("4");
+						var myChart = echarts.init(dom);
+						var app = {};
+						option = null;
+						app.title = '极坐标系下的堆叠柱状图';
+
+						option = {
+						title :[ {
+								text: '适龄未入园儿童数量情况',
+								subtext: '数据来源：教育部发展规划司教育统计数据',
+						   
+							},
+							{
+								subtext: '适龄儿童数根据在园儿童数与毛入园率计算，2019年、2020年数据根据一元线性回归模型预测',
+							  
+								   y: '93%'
+							   },],
+							 tooltip : {
+								trigger: 'item',
+								
+							},
+							angleAxis: {
+								type: 'category',
+								data: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018','2019','2020'],
+								z: 10
+							},
+							radiusAxis: {
+							},
+							polar: {
+							},
+							series: [{
+								type: 'bar',
+								data: [2976.67,
+						3424.45,
+						3685.76,
+						3894.69,
+						4050.71,
+						4264.83,
+						4413.86,
+						4600.14,
+						4656.42,
+						4968.62,  
+						5170.91  
+						],
+								coordinateSystem: 'polar',
+								name: '在园儿童/万人',
+								stack: 'a'
+							}, {
+								type: 'bar',
+								data: [2282.46 ,
+						2072.26 ,
+						2028.60 ,
+						1875.22 ,
+						1694.98 ,
+						1421.61 ,
+						1288.80 ,
+						1178.93 ,
+						1042.99 ,
+						808.84 ,
+						632.58 
+						],
+
+								coordinateSystem: 'polar',
+								name: '适龄未入园儿童/万人',
+								stack: 'a'
+							}, 
+							 
+							 ],
+							legend: {
+								show: true,
+								data: ['在园儿童/万人', '适龄未入园儿童/万人']
+							}
+						};
+						;
+						if (option && typeof option === "object") {
+							myChart.setOption(option, true);
+						}
+					</script>
+					<p><span style="font-size:10px;right:0%;position: absolute;"></br>数据来源：国家统计局-中国电视节目进出口统计年报</br>采集时间：2017年10月</span></p>
+                </div>
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-7 order-2">
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						<div id="5" style="width: 500px;height:400px;"></div>
+							<script type="text/javascript">
+								var dom = document.getElementById("5");
+								var myChart = echarts.init(dom);
+								var app = {};
+								option = null;
+								app.title = '极坐标系下的堆叠柱状图';
+
+								option = {
+								 title :[ {
+										text: '毛入园率',
+										subtext: '数据来源：教育部发展规划司教育统计数据',
+								   
+									},
+									{
+										subtext: '2019年、2020年毛入园率根据一元线性回归模型预测',
+									  
+										   y: '93%'
+									   },],
+									 tooltip : {
+										trigger: 'item',
+										formatter: "{a} <br/>{b} : {c} "
+									},
+									angleAxis: {
+										type: 'category',
+										data: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018','2019','2020'],
+										z: 10
+									},
+									radiusAxis: {
+									},
+									polar: {
+									},
+									series: [{
+										type: 'bar',
+										data: [0.566
+								,0.623
+								,0.645
+								,0.675
+								,0.705
+								,0.75
+								,0.774
+								,0.796
+								,0.817 ,
+								0.860,
+								0.891,
+								],
+										coordinateSystem: 'polar',
+										name: '毛入园率',
+										stack: 'a'
+									}, 
+									],
+									legend: {
+										show: true,
+										data: ['毛入园率']
+									}
+								};
+								;
+								if (option && typeof option === "object") {
+									myChart.setOption(option, true);
+								}
+							</script>
+							<p><span style="font-size:10px;right:0%;position: absolute;"></br>数据来源：国家统计局-中国电视节目进出口统计年报</br>采集时间：2017年10月</span></p>
+						</div>	
+					</div>
+				</div>
+            </div>
+        </div>
+		
+	</section>
+	
+	
+	
+	
+
+
+
+
+	
+	
+	
+    <!-- Bootstrap core JavaScript -->
+    <!--
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	-->
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
