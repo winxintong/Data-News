@@ -1,0 +1,59 @@
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0px;
+	/* 原来56，为了留出一个导航栏的空*/
+  }
+}
+
+header {
+	top: 0px;
+	left: 0px;
+	height: 97%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	border-width: 0px;
+	position: relative;
+	text-align: center;
+}
+header.masthead {
+  background: url('../img/banner.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+  padding: 5rem 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header.masthead>.overlay>.container>.display-1{
+	text-align:center;
+}
+
+header.masthead>.overlay>.container>.display-3{
+	font-size:55px;
+	text-align:right;
+}
+
+header.masthead>.overlay>.container>.one {
+	color:#BDBDBD;
+	text-align:left;
+}
+
+container>.row>.col-md-6{
+	padding-right:0px;
+}
+
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+}
